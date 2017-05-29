@@ -324,9 +324,9 @@ axis(1, at=seq(-8,10,2))
 axis(2, at=seq(20,70,10))
 abline(v=3, lty=3, lwd=1)
 segments(x0=-7, y0=coef(pw6)[1], x1=3, y1=coef(pw6)[1], col="black", lwd=2)
-segments(x0=3, y0=coef(pw6)[1]+coef(pw6)[2], x1=8, y1=coef(pw6)[1]+coef(pw6)[2] + 5*coef(pw6)[3], col="black", lwd=2)
+#segments(x0=3, y0=coef(pw6)[1]+coef(pw6)[2], x1=8, y1=coef(pw6)[1]+coef(pw6)[2] + 5*coef(pw6)[3], col="black", lwd=2)
 # I don't understand what the 5*coef(pw6)[3] is.  Why 5?
-segments(x0=3, y0=coef(pw6)[1]+coef(pw6)[2], x1=8, y1=coef(pw6)[1]+coef(pw6)[2] + 5*coef(pw6)[3], col="black", lwd=2)
+segments(x0=3, y0=coef(pw6)[1]+coef(pw6)[2], x1=8, y1=coef(pw6)[1]+coef(pw6)[2] + 8*coef(pw6)[3], col="black", lwd=2)
 par(new=FALSE)
 
 #*****************************************************************************************************
